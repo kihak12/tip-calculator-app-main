@@ -1,0 +1,289 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    cursor: default;
+}
+
+
+body{
+    background-color: #c5e4e7;
+}
+
+.page{
+    margin-top: 90px;
+}
+
+.logo{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.card{
+    width: 50%;
+    height: 481px;
+    margin: auto;
+    margin-top: 130px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: #00474b2f 0px 8px 40px;
+}
+
+.container-grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content:first-child{
+    margin: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.content{
+    margin: 20px;
+}
+
+.th-dark-green{
+    background-color: #00474B;
+    border-radius: 15px;
+}
+
+.th-green{
+    background-color: #26C2AD;
+}
+
+.content h2{
+    font-size: 1.1rem;
+    color: #515c5a;
+}
+
+.content-head .icon{
+    position: relative;
+    cursor: pointer;
+}
+
+.content-head input{
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    text-align: right;
+    font-weight: 900;
+    font-size: 24px;
+    color: #00474B;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: #F3F8FB;
+    border-radius: 5px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.content-head input:active, input:focus{
+    border: 2px solid #26C2AD;
+    outline: none;
+}
+
+.content-head .icon img{
+    width: 14px;
+    position: absolute;
+    z-index: 2;
+    bottom: 16px;
+    left: 14px;
+}
+
+.content-head.pt-2 .icon img{
+    bottom: 20px;
+    left: 14px;
+}
+
+.content-midd{
+    margin-top: 24px;
+}
+
+.btn-grid{
+    margin-top: 12px;
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn-grid button{
+    border-radius: 5px;
+    padding: 4px 10px 4px 10px;
+    background-color: #00474B;
+    border-color: rgba(255, 255, 255, 0);
+    font-weight: 900;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-grid input{
+    background-color: #F3F8FB;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0);
+    font-weight: 900;
+    font-size: 20px;
+    color: #00474B;
+    cursor: pointer;
+    min-width: 0;
+    text-align: center;
+}
+
+.btn-grid input:active, input:focus{
+    border: 2px solid #26C2AD;
+    outline: none;
+}
+
+.btn-grid button:hover{
+    background-color: #26C2AD;
+    color: #00474B;
+}
+
+.btn-grid .active{
+    background-color: #26C2AD;
+    color: #00474B;
+}
+
+.btn-grid button:hover:last-child{
+    background-color: #26C2AD;
+    color: #fff;
+}
+
+.pt-2{
+    margin-top: 24px;
+}
+
+.second-content{
+    position: relative;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.tip-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right{
+    color: #F3F8FB;
+}
+
+.right h2{
+    color: #F3F8FB;
+    font-size: 0.9rem;
+}
+
+.right p{
+    color: #5F8C92;
+    font-size: 0.7rem;
+}
+
+.price h2{
+    font-size: 52px;
+    color: #26C2AD;
+}
+
+.second-content button{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    left: 40px;
+    border-radius: 5px;
+    padding: 4px 10px 4px 10px;
+    background-color: #26C2AD;
+    border-color: rgba(255, 255, 255, 0);
+    font-weight: 900;
+    font-size: 24px;
+    color: #00474B;
+    cursor: pointer;
+}
+
+.second-content button:hover{
+    background-color: #9FE8DF;
+}
+
+.second-content button:disabled{
+    background-color: #0D686D;
+    cursor: default;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -webkit-appearance: none;
+    margin: 0;
+  -moz-appearance: textfield;
+}
+
+
+@media screen and (max-width: 1700px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .tip-line {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-grid {
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 90%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .tip-line {
+        flex-direction: row;
+    }
+    .second-content button{
+        position: initial;
+    }
+    .page{
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}

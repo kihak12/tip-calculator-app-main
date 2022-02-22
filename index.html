@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <img class="logo" src="./images/logo.svg" alt="logo"></img>
+    <div class="card">
+      <div class="container-grid">
+        <div class="content">
+          <div class="content-head">
+            <h2>Bill</h2>
+            <div class="icon">
+              <img src="./images/icon-dollar.svg" alt="dollars Icon">
+              <input id="amount" type="number" placeholder="0">
+            </div>
+          </div>
+          <div class="content-midd">
+            <h2>Select Tip %</h2>
+            <div class="btn-grid">
+              <button>5%</button>
+              <button>10%</button>
+              <button>15%</button>
+              <button>25%</button>
+              <button>50%</button>
+              <input id="custom" type="number" placeholder="Custom" max="100">
+            </div>
+          </div>
+          <div class="content-head pt-2">
+            <h2>Number of People</h2>
+            <div class="icon">
+              <img src="./images/icon-person.svg" alt="person Icon">
+              <input id="person" type="number" name="person" placeholder="0">
+            </div>
+          </div>
+        </div>
+        <div class="content th-dark-green">
+          <div class="second-content">
+            <div class="tip-line">
+              <div class="right">
+                <h3>Tip Amount</h3>
+                <p>/ person</p>
+              </div>
+              <div class="price">
+                <h2 id="txtTipPrice">$0.00</h2>
+              </div>
+            </div>
+            <div class="tip-line">
+              <div class="right">
+                <h3>Total</h3>
+                <p>/ person</p>
+              </div>
+              <div class="price">
+                <h2 id="txtTotalPrice">$0.00</h2>
+              </div>
+            </div>
+            <button disabled>RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src="js/script.js"></script>
